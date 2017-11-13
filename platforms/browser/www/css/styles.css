@@ -1,0 +1,96 @@
+/*
+   statusbar-overlay sets the background color for the overlay. Black text is the default when the statusbar plugin is not added. When the
+   statusbar plugin is added, it also adds default setting to make the content white via:
+
+       <preference name="StatusBarStyle" value="lightcontent"/>
+
+   Setting the background color to black will allow the default light content (white text/icons) to show on it. The statusbar plugin is included
+   in the config.xml file and will be added by the CLI when you build locally.
+
+   See https://github.com/apache/cordova-plugin-statusbar
+*/
+
+
+/* mis en forme de l'index */
+
+.logo {
+    margin: auto;
+}
+
+.image_index {
+    height: auto;
+    width: 200px;
+    margin: auto;
+}
+
+.statusbar-overlay {
+    background: #000000;
+}
+
+.button {
+    background: none;
+    text-align: center;
+    margin: 5px;
+    border: none;
+    color: white;
+    width: 80%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.button_app {
+    margin: auto;
+    border: none;
+    background: none;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.inside-button{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.button_top_left,
+.button_top_right {
+    margin-top: 25px;
+    background: none;
+    border: none;
+    text-align: center;
+}
+
+.button_top_left {
+    border-radius: 15px 0px 0px 0px;
+    background: #0A8A01;
+}
+
+.button_top_right {
+    border-radius: 0px 15px 0px 0px;
+    background: #2D005D;
+}
+
+.button_bot_left {
+    border-radius: 0px 0px 0px 15px;
+    background: #0014BD;
+}
+
+.button_bot_right {
+    border-radius: 0px 0px 15px 0px;
+    background: #EE6E00;
+}
+
+.block-button {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-button {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+}
